@@ -1,75 +1,82 @@
-/* Genel ayarlar */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #f8f8f8;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Menü Container */
-  .menu-container {
-    max-width: 800px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  /* Başlık */
-  .menu-container h1 {
+}
+
+/* Ana Menü Konteyneri */
+.menu-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlıklar */
+h1 {
+    font-size: 2rem;
+    color: #3a8c4f; /* Yeşil tonunda başlık */
     text-align: center;
-    font-size: 36px;
-    color: #333;
+    font-weight: bold;
+}
+
+/* Alt Başlıklar */
+.menu-category {
     margin-bottom: 30px;
-  }
-  
-  /* Alt Başlık Kategorileri */
-  .menu-category {
-    margin-top: 40px;
-    border-top: 2px solid #eee;
-    padding-top: 20px;
-  }
-  
-  .menu-category h2 {
-    font-size: 28px;
-    color: #e74c3c;
-    border-bottom: 2px solid #e74c3c;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-  }
-  
-  /* Menü Öğeleri */
-  .menu-item {
+}
+
+.category-title {
+    background-color: #3a8c4f; /* Yeşil tonunda */
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.category-title:hover {
+    background-color: #2a5d36; /* Daha koyu yeşil ton */
+}
+
+/* Ürünler */
+.menu-item {
     display: flex;
     align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px dashed #ddd;
-  }
-  
-  .menu-item:last-child {
-    border-bottom: none;
-  }
-  
-  .menu-item img {
-    width: 100px;
-    height: 100px;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
     border-radius: 8px;
-    margin-right: 20px;
-    object-fit: cover;
-  }
-  
-  .menu-item p {
-    font-size: 20px;
-    margin: 0;
-    flex-grow: 1;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.menu-item p {
+    font-size: 1.1rem;
     color: #555;
-  }
-  
-  .menu-item span.price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #27ae60;
-  }
-  
+    margin: 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #28a745; /* Yeşil renk fiyat */
+}
+
+/* Alt Başlık İçeriği (Başlangıçta gizli) */
+.category-content {
+    display: none;
+    margin-top: 10px;
+}
