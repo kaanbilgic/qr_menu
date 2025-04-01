@@ -21,4 +21,10 @@ body {
     width: 150px;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #888;
+    font-size: 18px;
 }
