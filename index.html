@@ -1,61 +1,179 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Menü</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Menü</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- İstersen Google Fonts'tan 'Roboto' ekleyebilirsin -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="menu-container">
-        <h1>Menü</h1>
+  <div class="menu-container">
+    <h1>Restoran Menüsü</h1>
 
-        <!-- Kampanyalar Başlığı -->
-        <div class="menu-category">
-            <h2>Kampanyalar</h2>
-            <div class="menu-item">Burger Menü <span class="price">₺50</span></div>
-            <div class="menu-item">Sosisli Menü <span class="price">₺45</span></div>
-            <div class="menu-item">Patso Menü <span class="price">₺40</span></div>
-        </div>
-
-        <!-- Ekmek Araları Başlığı -->
-        <div class="menu-category">
-            <h2>Ekmek Araları</h2>
-            <div class="menu-item">Yarım Köfte <span class="price">₺30</span></div>
-            <div class="menu-item">3 Çeyrek Köfte <span class="price">₺35</span></div>
-            <div class="menu-item">Yarım Tavuk <span class="price">₺40</span></div>
-            <div class="menu-item">3 Çeyrek Tavuk <span class="price">₺45</span></div>
-            <div class="menu-item">Yarım Ciğer <span class="price">₺35</span></div>
-            <div class="menu-item">3 Çeyrek Ciğer <span class="price">₺40</span></div>
-            <div class="menu-item">Yarım Sucuk <span class="price">₺35</span></div>
-            <div class="menu-item">3 Çeyrek Sucuk <span class="price">₺40</span></div>
-            <div class="menu-item">Köfte Dürüm <span class="price">₺45</span></div>
-            <div class="menu-item">Tavuk Dürüm <span class="price">₺50</span></div>
-            <div class="menu-item">Ciğer Dürüm <span class="price">₺50</span></div>
-            <div class="menu-item">Sucuk Dürüm <span class="price">₺50</span></div>
-            <div class="menu-item">Hamburger <span class="price">₺55</span></div>
-            <div class="menu-item">Sosisli <span class="price">₺25</span></div>
-            <div class="menu-item">Patso <span class="price">₺30</span></div>
-            <div class="menu-item">Patates Cips <span class="price">₺15</span></div>
-        </div>
-
-        <!-- İçecekler Başlığı -->
-        <div class="menu-category">
-            <h2>İçecekler</h2>
-            <div class="menu-item">Kutu Kola <span class="price">₺10</span></div>
-            <div class="menu-item">Şişe Kola <span class="price">₺12</span></div>
-            <div class="menu-item">Şişe Fanta <span class="price">₺12</span></div>
-            <div class="menu-item">Şişe Gazoz <span class="price">₺12</span></div>
-            <div class="menu-item">Kutu Meyve Suyu <span class="price">₺8</span></div>
-            <div class="menu-item">Fincan Çay <span class="price">₺5</span></div>
-            <div class="menu-item">Ayran <span class="price">₺7</span></div>
-            <div class="menu-item">Şalgam <span class="price">₺7</span></div>
-            <div class="menu-item">Soda <span class="price">₺6</span></div>
-            <div class="menu-item">Su <span class="price">₺4</span></div>
-        </div>
-
+    <!-- Kampanyalar -->
+    <div class="menu-category">
+      <h2>Kampanyalar</h2>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Burger Menü">
+        <p>Burger Menü</p>
+        <span class="price">₺50</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Sosisli Menü">
+        <p>Sosisli Menü</p>
+        <span class="price">₺45</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Patso Menü">
+        <p>Patso Menü</p>
+        <span class="price">₺40</span>
+      </div>
     </div>
+
+    <!-- Ekmek Araları -->
+    <div class="menu-category">
+      <h2>Ekmek Araları</h2>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Yarım Köfte">
+        <p>Yarım Köfte</p>
+        <span class="price">₺30</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="3 Çeyrek Köfte">
+        <p>3 Çeyrek Köfte</p>
+        <span class="price">₺35</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Yarım Tavuk">
+        <p>Yarım Tavuk</p>
+        <span class="price">₺40</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="3 Çeyrek Tavuk">
+        <p>3 Çeyrek Tavuk</p>
+        <span class="price">₺45</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Yarım Ciğer">
+        <p>Yarım Ciğer</p>
+        <span class="price">₺35</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="3 Çeyrek Ciğer">
+        <p>3 Çeyrek Ciğer</p>
+        <span class="price">₺40</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Yarım Sucuk">
+        <p>Yarım Sucuk</p>
+        <span class="price">₺35</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="3 Çeyrek Sucuk">
+        <p>3 Çeyrek Sucuk</p>
+        <span class="price">₺40</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Köfte Dürüm">
+        <p>Köfte Dürüm</p>
+        <span class="price">₺45</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Tavuk Dürüm">
+        <p>Tavuk Dürüm</p>
+        <span class="price">₺50</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Ciğer Dürüm">
+        <p>Ciğer Dürüm</p>
+        <span class="price">₺50</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Sucuk Dürüm">
+        <p>Sucuk Dürüm</p>
+        <span class="price">₺50</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Hamburger">
+        <p>Hamburger</p>
+        <span class="price">₺55</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Sosisli">
+        <p>Sosisli</p>
+        <span class="price">₺25</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Patso">
+        <p>Patso</p>
+        <span class="price">₺30</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Patates Cips">
+        <p>Patates Cips</p>
+        <span class="price">₺15</span>
+      </div>
+    </div>
+
+    <!-- İçecekler -->
+    <div class="menu-category">
+      <h2>İçecekler</h2>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Kutu Kola">
+        <p>Kutu Kola</p>
+        <span class="price">₺10</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Şişe Kola">
+        <p>Şişe Kola</p>
+        <span class="price">₺12</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Şişe Fanta">
+        <p>Şişe Fanta</p>
+        <span class="price">₺12</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Şişe Gazoz">
+        <p>Şişe Gazoz</p>
+        <span class="price">₺12</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Kutu Meyve Suyu">
+        <p>Kutu Meyve Suyu</p>
+        <span class="price">₺8</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Fincan Çay">
+        <p>Fincan Çay</p>
+        <span class="price">₺5</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Ayran">
+        <p>Ayran</p>
+        <span class="price">₺7</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Şalgam">
+        <p>Şalgam</p>
+        <span class="price">₺7</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Soda">
+        <p>Soda</p>
+        <span class="price">₺6</span>
+      </div>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Su">
+        <p>Su</p>
+        <span class="price">₺4</span>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>
