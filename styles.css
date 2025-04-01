@@ -1,6 +1,7 @@
+/* Genel Gövde Ayarları */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e8f5e9; /* Açık yeşil arka plan */
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,40 +10,43 @@ body {
 /* Ana Menü Konteyneri */
 .menu-container {
     width: 80%;
-    margin: auto;
+    margin: 30px auto;
     padding: 20px;
-    background: white;
+    background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* Başlıklar */
 h1 {
-    font-size: 2rem;
-    color: #3a8c4f; /* Yeşil tonunda başlık */
-    text-align: center;
+    font-size: 2.5rem;
+    color: #388e3c; /* Yeşil tonunda başlık */
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 /* Alt Başlıklar */
 .menu-category {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .category-title {
-    background-color: #3a8c4f; /* Yeşil tonunda */
+    background-color: #4caf50; /* Canlı yeşil */
     color: white;
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     width: 100%;
     text-align: left;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .category-title:hover {
-    background-color: #2a5d36; /* Daha koyu yeşil ton */
+    background-color: #388e3c; /* Hoverda koyu yeşil */
+    transform: scale(1.05); /* Hafif büyüme efekti */
 }
 
 /* Ürünler */
@@ -50,11 +54,16 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
 }
 
 .menu-item img {
@@ -72,11 +81,17 @@ h1 {
 .price {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #28a745; /* Yeşil renk fiyat */
+    color: #388e3c; /* Yeşil renk fiyat */
 }
 
 /* Alt Başlık İçeriği (Başlangıçta gizli) */
 .category-content {
     display: none;
-    margin-top: 10px;
+    margin-top: 15px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.category-content .menu-item {
+    background-color: #f1f8e9; /* Çok açık yeşil arka plan */
 }
